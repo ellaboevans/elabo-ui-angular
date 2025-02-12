@@ -1,24 +1,39 @@
-# ElaboUiAngular
+# Welcome to Elabo UI Angular
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.0.
+Welcome to **elabo-ui-angular** — your go-to Angular UI library that brings modern, Tailwind CSS-powered components to your Angular projects. Designed exclusively for Angular 18 and above, this library provides a suite of reusable UI components to help you build applications faster and more efficiently.
 
-## Code scaffolding
+## Getting Started
 
-Run `ng generate component component-name --project elabo-ui-angular` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project elabo-ui-angular`.
-> Note: Don't forget to add `--project elabo-ui-angular` or else it will be added to the default project in your `angular.json` file. 
+### Prerequisites
 
-## Build
+- **Angular 18 or later:** Make sure your project is running on Angular 18 or above.
+- **Node.js:** Version 14 or higher is recommended.
+- **Tailwind CSS:** For a fully styled experience, configure Tailwind CSS in your project.
 
-Run `ng build elabo-ui-angular` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Installation
 
-## Publishing
+Install the library via npm:
 
-After building your library with `ng build elabo-ui-angular`, go to the dist folder `cd dist/elabo-ui-angular` and run `npm publish`.
+```bash
+npm install @small_god/elabo-ui-angular
+```
 
-## Running unit tests
+# Setup
 
-Run `ng test elabo-ui-angular` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Coming soon
 
-## Further help
+# Usage
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Coming soon
+
+# Contributing
+
+Coming soon
+
+# License
+
+This project is licensed under the MIT License. See the [LICENSE]("LICENSE") file for more information.
+
+# Support
+
+For any questions or further support, please open an issue on our [GitHub repository]("https://github.com/ellaboevans/elabo-ui-angular") or reach out to us at [ellaboevans@gmail.com]("mailto:ellaboevans@gmail.com").
