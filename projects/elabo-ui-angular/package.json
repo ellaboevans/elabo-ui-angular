@@ -1,0 +1,33 @@
+{
+  "name": "@small_god/elabo-ui-angular",
+  "version": "0.0.1",
+  "author": {
+    "name": "Evans Elabo",
+    "url": "https://github.com/ellaboevans"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ellaboevans/elabo-ui-angular.git"
+  },
+  "peerDependencies": {
+    "@angular/common": "^18.2.0",
+    "@angular/core": "^18.2.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "rxjs": "~7.8.0",
+    "tailwind-merge": "^3.0.1"
+  },
+  "license": "MIT",
+  "keywords": [
+    "angular",
+    "tailwind",
+    "elabo-ui",
+    "tailwindcss",
+    "typescript"
+  ],
+  "dependencies": {
+    "tslib": "^2.3.0",
+    "tailwindcss": "^3.4.17"
+  },
+  "sideEffects": false
+}

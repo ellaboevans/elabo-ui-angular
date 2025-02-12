@@ -1,0 +1,14 @@
+<span
+  [class]="classes"
+  [ngClass]="{
+    primary: variant === 'primary',
+    secondary: variant === 'secondary',
+    success: variant === 'success',
+    danger: variant === 'danger',
+    warning: variant === 'warning',
+    info: variant === 'info',
+  }"
+  [ngStyle]="{ color: textColor }"
+>
+  <ng-content></ng-content>
+</span>
