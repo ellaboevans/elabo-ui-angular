@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { ButtonComponent } from './button.component';
 import { By } from '@angular/platform-browser';
+import { DebugElement } from '@angular/core';
 
 describe('ButtonComponent', () => {
   let component: ButtonComponent;
@@ -21,7 +22,7 @@ describe('ButtonComponent', () => {
   });
 
   it('should have button defined', () => {
-    const button = fixture.debugElement.query(
+    const button: DebugElement = fixture.debugElement.query(
       By.css('[data-test-id="button"]')
     );
     expect(button).toBeTruthy();
@@ -31,7 +32,7 @@ describe('ButtonComponent', () => {
     component.buttonText = 'Button';
     fixture.detectChanges();
 
-    const button = fixture.debugElement.query(
+    const button: DebugElement = fixture.debugElement.query(
       By.css('[data-test-id="button"]')
     );
     const buttonText = button.nativeElement.innerText;
@@ -43,7 +44,7 @@ describe('ButtonComponent', () => {
     component.variant = 'outlined';
     fixture.detectChanges();
 
-    const button = fixture.debugElement.query(
+    const button: DebugElement = fixture.debugElement.query(
       By.css('[data-test-id="button"]')
     );
     const buttonClasses = button.nativeElement.classList;
@@ -55,7 +56,7 @@ describe('ButtonComponent', () => {
   it('should emit a click event when button is clicked', () => {
     const clickSpy = spyOn(component.click, 'emit');
 
-    const button = fixture.debugElement.query(
+    const button: DebugElement = fixture.debugElement.query(
       By.css('[data-test-id="button"]')
     );
     button.nativeElement.click();

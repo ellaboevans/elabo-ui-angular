@@ -3,6 +3,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { NavbarComponent } from './navbar.component';
 import { ActivatedRoute } from '@angular/router';
 import { By } from '@angular/platform-browser';
+import { DebugElement } from '@angular/core';
 
 describe('NavbarComponent', () => {
   let component: NavbarComponent;
@@ -35,14 +36,14 @@ describe('NavbarComponent', () => {
   });
 
   it('should have a navbar logo', () => {
-    const navbarLogo = fixture.debugElement.query(
+    const navbarLogo: DebugElement = fixture.debugElement.query(
       By.css('[data-test-id="navbar-logo"]')
     );
     expect(navbarLogo).toBeTruthy();
   });
 
   it('should have navbar logo read "EUI Angular"', () => {
-    const navbarLogo = fixture.debugElement.query(
+    const navbarLogo: DebugElement = fixture.debugElement.query(
       By.css('[data-test-id="navbar-logo"]')
     );
     const innerText = navbarLogo.nativeElement.innerText;
@@ -50,7 +51,7 @@ describe('NavbarComponent', () => {
   });
 
   it('should have a navbar item', () => {
-    const navbarItem = fixture.debugElement.query(
+    const navbarItem: DebugElement = fixture.debugElement.query(
       By.css('[data-test-id="navbar-item"]')
     );
     expect(navbarItem).toBeTruthy();

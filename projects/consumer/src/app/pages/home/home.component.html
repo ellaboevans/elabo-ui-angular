@@ -18,7 +18,7 @@
   <!-- card -->
   <div class="grid grid-cols-1 md:grid-cols-2 row-gap gap-4 w-full">
     <div
-      class="flex flex-col items-center justify-start gap-4 w-full border px-4 border-neutral-600 py-2.5 rounded-lg bg-transparent hover:bg-neutral-100 cursor-pointer duration-200 transition-all md:hover:-translate-x-9 md:even:hover:translate-x-9 md:even:-rotate-6 hover:scale-105 hover:shadow"
+      class="flex flex-col items-center justify-start gap-4 w-full border px-4 border-neutral-600 py-2.5 rounded-lg bg-transparent hover:bg-neutral-100 cursor-pointer duration-500 transition-all md:hover:-translate-x-9 md:even:hover:translate-x-9 md:even:-rotate-6 hover:scale-105 hover:shadow"
       *ngFor="let i of [1, 2, 3]"
       data-test-id="card"
     >
@@ -45,3 +45,37 @@
     </div>
   </div>
 </section>
+<!-- <section
+  class="flex flex-col items-center justify-center gap-4 py-10 px-4 md:w-[50%] space-y-4 container mx-auto mt-14"
+>
+  <div class="text-center md:px-28 space-y-4 mb-6">
+    <h1
+      class="text-4xl text-center font-bold text-neutral-700 w-full px-14 mt-8"
+    >
+      Give us a Star
+    </h1>
+    <p class="text-sm font-light text-neutral-500 w-full md:px-14">
+      We're always looking for contributors to help us improve and expand our
+      capabilities. If you're interested in contributing, please feel free to
+      fork our repository and submit a pull request.
+    </p>
+  </div>
+</section> -->
+
+<!-- squad (contributors) -->
+<app-squad-seat></app-squad-seat>
+<div
+  class="container mx-auto flex flex-col w-full md:w-[50%] items-center gap-6 justify-center my-8"
+>
+  <p class="px-4 text-center text-neutral-500 md:px-14">
+    Share your code, offer insights, or sponsor on GitHub. Let’s create
+    something incredible together!
+  </p>
+  <a href="https://github.com/ellaboevans/elabo-ui-angular" target="_blank">
+    <eui-button
+      buttonText="Secure your place in the 80s seat!"
+      variant="filled"
+      [ngStyle]="{ width: '50%' }"
+    ></eui-button>
+  </a>
+</div>
