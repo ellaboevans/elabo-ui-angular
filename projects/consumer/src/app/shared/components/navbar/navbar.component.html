@@ -1,0 +1,29 @@
+<div class="sticky top-0 left-0 right-0 flex w-full items-center z-[999]">
+  <nav
+    class="block backdrop-saturate-200 backdrop-blur-2xl bg-opacity-80 border border-white/80 text-white w-full max-w-full rounded-none border-b-[1.5px] !border-blue-gray-50 bg-white py-3"
+  >
+    <div class="container mx-auto">
+      <div class="flex items-center w-full !justify-between">
+        <a
+          routerLink="/"
+          class="block antialiased text-sm pl-3 font-bold text-gray-800 hover:text-neutral-800 transition-all"
+          data-test-id="navbar-logo"
+        >
+          EUI Angular
+        </a>
+        <ul class="flex items-center justify-center gap-1">
+          <li>
+            <a
+              routerLink="/docs"
+              class="flex items-center rounded-lg text-start transition-all hover:bg-blue-gray-50 hover:bg-opacity-80 focus:bg-gray-50 focus:bg-opacity-80 focus:text-blue-gray-900 outline-none px-4 py-2.5 text-sm text-gray-800 hover:text-gray-900"
+              routerLinkActive="text-neutral-800 underline bg-blue-gray-50 abg-opacity-80"
+              data-test-id="navbar-item"
+            >
+              Docs
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
