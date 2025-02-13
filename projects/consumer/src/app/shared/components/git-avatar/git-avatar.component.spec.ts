@@ -2,6 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { GitAvatarComponent } from './git-avatar.component';
 import { By } from '@angular/platform-browser';
+import { DebugElement } from '@angular/core';
 
 describe('GitAvatarComponent', () => {
   let component: GitAvatarComponent;
@@ -22,14 +23,14 @@ describe('GitAvatarComponent', () => {
   });
 
   it('should have anchor tag defined', () => {
-    const anchorTag = fixture.debugElement.query(
+    const anchorTag: DebugElement = fixture.debugElement.query(
       By.css('[data-test-id="git-avatar"]')
     );
     expect(anchorTag).toBeTruthy();
   });
 
   it('should have anchor tag with correct href', () => {
-    const anchorTag = fixture.debugElement.query(
+    const anchorTag: DebugElement = fixture.debugElement.query(
       By.css('[data-test-id="git-avatar"]')
     );
     const href = anchorTag.nativeElement.href;
@@ -46,7 +47,7 @@ describe('GitAvatarComponent', () => {
   });
 
   it('should have anchor tag with correct rel', () => {
-    const anchorTag = fixture.debugElement.query(
+    const anchorTag: DebugElement = fixture.debugElement.query(
       By.css('[data-test-id="git-avatar"]')
     );
     const rel = anchorTag.nativeElement.rel;
@@ -54,7 +55,7 @@ describe('GitAvatarComponent', () => {
   });
 
   it('should have anchor tag with correct title attribute', () => {
-    const anchorTag = fixture.debugElement.query(
+    const anchorTag: DebugElement = fixture.debugElement.query(
       By.css('[data-test-id="git-avatar"]')
     );
     const title = anchorTag.nativeElement.title;
@@ -69,7 +70,7 @@ describe('GitAvatarComponent', () => {
   });
 
   it('should have img tag with correct src', () => {
-    const imgTag = fixture.debugElement.query(
+    const imgTag: DebugElement = fixture.debugElement.query(
       By.css('[data-test-id="git-avatar-img"]')
     );
     const src = imgTag.nativeElement.src;
@@ -78,7 +79,7 @@ describe('GitAvatarComponent', () => {
   });
 
   it('should have img tag with correct alt', () => {
-    const imgTag = fixture.debugElement.query(
+    const imgTag: DebugElement = fixture.debugElement.query(
       By.css('[data-test-id="git-avatar-img"]')
     );
     const alt = imgTag.nativeElement.alt;

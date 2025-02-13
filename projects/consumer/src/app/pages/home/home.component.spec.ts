@@ -2,6 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { HomeComponent } from './home.component';
 import { By } from '@angular/platform-browser';
+import { DebugElement } from '@angular/core';
 
 describe('HomeComponent', () => {
   let component: HomeComponent;
@@ -22,14 +23,14 @@ describe('HomeComponent', () => {
   });
 
   it('should have 3 cards in the grid', () => {
-    const cards = fixture.debugElement.queryAll(
+    const cards: DebugElement[] = fixture.debugElement.queryAll(
       By.css('[data-test-id="card"]')
     );
     expect(cards.length).toBe(3);
   });
 
   it('should have each card render an svg', () => {
-    const cards = fixture.debugElement.queryAll(
+    const cards: DebugElement[] = fixture.debugElement.queryAll(
       By.css('[data-test-id="card"]')
     );
     cards.forEach((card) => {
@@ -39,7 +40,7 @@ describe('HomeComponent', () => {
   });
 
   it('should have each card render a heading', () => {
-    const cards = fixture.debugElement.queryAll(
+    const cards: DebugElement[] = fixture.debugElement.queryAll(
       By.css('[data-test-id="card"]')
     );
     cards.forEach((card) => {
@@ -49,7 +50,7 @@ describe('HomeComponent', () => {
   });
 
   it('should have each card render a paragraph', () => {
-    const cards = fixture.debugElement.queryAll(
+    const cards: DebugElement[] = fixture.debugElement.queryAll(
       By.css('[data-test-id="card"]')
     );
     cards.forEach((card) => {

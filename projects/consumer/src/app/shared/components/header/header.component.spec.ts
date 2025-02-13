@@ -2,6 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { HeaderComponent } from './header.component';
 import { By } from '@angular/platform-browser';
+import { DebugElement } from '@angular/core';
 
 describe('HeaderComponent', () => {
   let component: HeaderComponent;
@@ -22,14 +23,14 @@ describe('HeaderComponent', () => {
   });
 
   it('should have a heading title', () => {
-    const headingTitle = fixture.debugElement.query(
+    const headingTitle: DebugElement = fixture.debugElement.query(
       By.css('[data-test-id="heading-title"]')
     );
     expect(headingTitle).toBeTruthy();
   });
 
   it('should have a heading title reading "Welcome to EUI Angular"', () => {
-    const headingTitle = fixture.debugElement.query(
+    const headingTitle: DebugElement = fixture.debugElement.query(
       By.css('[data-test-id="heading-title"]')
     );
     const innerText = headingTitle.nativeElement.innerText;
@@ -37,7 +38,7 @@ describe('HeaderComponent', () => {
   });
 
   it('should have a heading description', () => {
-    const headingDesc = fixture.debugElement.query(
+    const headingDesc: DebugElement = fixture.debugElement.query(
       By.css('[data-test-id="heading-desc"]')
     );
     expect(headingDesc).toBeTruthy();
